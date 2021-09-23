@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>TODO List - Imersão 42</title>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <h1>Lista de Tarefas</h1>
+
+    <div class="container">
+
+        <div class="inputContainer">
+            <form action="#" id="todoForm">
+                <ul>
+                    <li><label for="task">Tarefa:</label><br>
+                        <textarea id="task" name="task" required cols="33" rows="6"></textarea>
+                    </li>
+                    <li><label for="deadline">Até a Data:</label><br>
+                        <input type="datetime-local" id="deadline" name="deadline" min="1900-01-01T00:00"
+                            max="2100-12-12T00:00" required><br>
+                    </li>
+                    <li><input id="submitBtn" type="submit"></input></li>
+            </form>
+            </ul>
+        </div>
+
+        <div class="listContainer">
+            <ul id="todoList">
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
